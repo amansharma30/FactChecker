@@ -1,0 +1,2 @@
+inputfilepath=/Users/amansharma/git/FactChecker/FactChecker/SNLP2019_test.tsv
+outputfilepath=result.ttl

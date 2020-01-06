@@ -136,7 +136,7 @@ public class Learner {
 		Checker checkerForTestData = learner.createChecker();
 
 		List<Fact> factsResults = checkerForTestData.checkFacts("SNLP2019_training.tsv");
-		 checkerForTestData.writeResults("result.ttl");
+		checkerForTestData.writeResults("result.ttl");
 
 		/*
 		 * for (Fact fact : factsResults) { System.out.println(fact.getFactString() +
@@ -146,3 +146,20 @@ public class Learner {
 		System.out.println(factsResult.getFactString() + " got: " + factsResult.getFactValue());
 	}
 }
+
+/*
+ * 
+ * if (fact.getFactString().contains("author")) {
+ * 
+ * String parts[] = fact.getFactString().split(" "); if (parts[parts.length -
+ * 1].equalsIgnoreCase("author.")) {
+ * 
+ * object = fact.getFactString().split("is")[0].trim(); subject =
+ * fact.getFactString().split("is")[1].split("'")[0].trim();
+ * 
+ * } else { object = fact.getFactString().split("is")[1].trim(); subject =
+ * fact.getFactString().split("is")[0].split("'")[0].trim(); } predicate =
+ * "author"; }
+ * 
+ * else {
+ */
